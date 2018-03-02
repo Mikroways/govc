@@ -1,0 +1,7 @@
+#!/bin/bash
+docker run --rm -it \
+  -e GOVC_URL=$VMWARE_URL \
+  -e GOVC_USERNAME=$VMWARE_USER \
+  -e GOVC_PASSWORD=$VMWARE_PASS \
+  -e GOVC_INSECURE=true \
+  mikroways/govc "$@"
